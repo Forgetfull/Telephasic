@@ -1,2 +1,5 @@
-body {
-  background-color: orange; }
+.header {
+  background-color: red;
+  width: 940px;
+  margin: 0 auto;
+  height: 10px; }
