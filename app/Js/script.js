@@ -1,6 +1,6 @@
 $(function() {
 	var pull 		= $('#pull');
-		menu 		= $('nav ul');
+		menu 		= $('main-nav');
 		menuHeight	= menu.height();
 
 	$(pull).on('click', function(e) {
