@@ -1,17 +1,15 @@
-$(function() {
-	var pull 		= $('#pull');
-		menu 		= $('main-nav');
-		menuHeight	= menu.height();
-
-	$(pull).on('click', function(e) {
-		e.preventDefault();
-		menu.slideToggle();
-	});
-});
-
-$(window).resize(function(){
-	var w = $(window).width();
-	if(w > 320 && menu.is(':hidden')) {
-		menu.removeAttr('style');
-	}
-});
+$(document).ready(function() {
+  $('#pull').click(function() {
+    $('.main-nav').slideToggle(500);
+  });//end slide toggle
+  
+  $(window).resize(function() {		
+		if (  $(window).width() > 763 ) {			
+			$('.main-nav').css('display' , 'flex');
+		 }
+        if (  $(window).width() < 763 ) {			
+			$('.main-nav').css('display' , 'none');
+		 }
+      
+	});//end resize
+});//end ready
