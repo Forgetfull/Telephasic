@@ -4,10 +4,10 @@ $(document).ready(function() {
   });//end slide toggle
   
   $(window).resize(function() {		
-		if (  $(window).width() > 763 ) {			
+		if (  $(window).width() > 7 ) {			
 			$('.main-nav').css('display' , 'flex');
 		 }
-        if (  $(window).width() < 763 ) {			
+        if (  $(window).width() < 736 ) {			
 			$('.main-nav').css('display' , 'none');
 		 }
       
